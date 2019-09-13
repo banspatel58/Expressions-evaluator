@@ -1,0 +1,139 @@
+// assignment4.mpc
+
+project (assignment4) {
+  exename = assignment4
+  install = .
+ 
+  libs += 
+  libpaths +=
+  includes +=
+
+  specific (make, gnuace) {
+    compile_flags += -std=c++11
+  }
+
+  Source_Files {
+
+	driver.cpp
+
+  }
+
+  Header_Files {
+	
+	Array_Base.h
+
+	Array.h
+		
+	Stack.h
+
+	Expr_Command.h
+
+	Binary_Op_Command.h
+
+	Add_Command.h
+
+	Subtract_Command.h
+
+	Multiply_Command.h
+
+	Division_Command.h
+
+	Mod_Command.h
+
+	Parenthesis_Command.h
+
+	Expr_Command_Factory.h
+
+	Stack_Expr_Command_Factory.h
+
+	Expr_Node.h	
+
+	Unary_Expr_Node.h
+
+	Binary_Expr_Node.h
+
+	Num_Node.h
+
+	Add_Node.h
+
+	Subtract_Node.h
+
+	Multiply_Node.h
+
+	Division_Node.h
+
+	Mod_Nod.h
+
+	Expr_Builder.h
+
+	Expr_Tree_Builder.h
+
+	Expr_Node_Visitor.h
+
+	Eval_Expr_Tree.h
+
+  }
+
+  Inline_Files {
+	
+	Array_Base.inl
+
+	Array.inl
+
+	Stack.inl
+
+  }
+
+  Template_Files {
+	
+	Array_Base.cpp
+
+	Array.cpp
+
+    Stack.cpp
+	
+	Binary_Op_Command.cpp
+
+	Add_Command.cpp
+
+	Subtract_Command.cpp
+
+	Multiply_Command.cpp
+
+	Division_Command.cpp
+
+	Mod_Command.cpp
+
+	Parenthesis_Command.cpp
+
+	Stack_Expr_Command_Factory.cpp
+
+	Expr_Node.cpp
+
+	Unary_Expr_Node.cpp
+
+	Binary_Expr_Node.cpp
+
+	Num_Node.cpp
+
+	Add_Node.cpp
+
+	Subtract_Node.cpp
+
+	Multiply_Node.cpp
+
+	Division_Node.cpp
+
+	Mod_Node.cpp
+
+	Expr_Builder.cpp
+
+	Expr_Tree_Builder.cpp
+
+	Expr_Node_Visitor.cpp
+
+	Eval_Expr_Tree.cpp
+	   	 
+  }
+
+}
